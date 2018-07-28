@@ -33,7 +33,7 @@ const fs = require("fs");
 
 //////////////////////////////////////////////iyvu
 
-const developers = ["452191687159185409"]
+const developers = ["356808288974667776"]
 const adminprefix = "$";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
