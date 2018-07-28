@@ -358,60 +358,6 @@ ${message.guild.roles.size}
     }
 });
 
-
-
-
-
-
-
-
-
-client.on('message', message => {
-    if(message.content.startsWith('$help')) {
-        
-        message.channel.send('**[ لقد تم أرسال جميع أوامر البوت في الخاص :envelope_with_arrow: | Check your DM. ]**')
-    }
-});
-
-
-client.on('message', message => {
-    if(message.content.startsWith('$help')) {
-   const embed = new Discord.RichEmbed()
-.setColor('RANDOM')
-        .setDescription(`**
-        
-╭━━━╮╭━━╮╱╱╱╭╮
-┃╭━╮┃┃╭╮┃╱╱╭╯╰╮
-┃╰━━╮┃╰╯╰┳━┻╮╭╯
-╰━━╮┃┃╭━╮┃╭╮┃┃
-┃╰━╯┃┃╰━╯┃╰╯┃╰╮
-╰━━━╯╰━━━┻━━┻━╯
-By , <@456641975932813345> - <@323885452207587329> 
-<@406143689984049152> - <@352139023348924418> - <@298732816995319809> .
-General's Commands. :earth_asia: 
-$server - معلومات عن سيرفرك :scroll:   
-$user - معلومات عن حسابك :id: 
-$avatar - صورة بروفايلك الشخصي :frame_photo: 
-$time - الوقت الحالي - السعودية فقط :flag_sa: 
-$sar7 - لمصارحة شخص  :flushed: 
-$cal - آله حاسبة خاصةة بالبوت :calendar_spiral: 
-$voice - معرفة عدد المتواجدين بالصوت :microphone: 
-$allbots - رؤية جميع بوتات السيرفر :robot:
-$ping - رؤية سرعة اتصالك :stopwatch:  
-$mcstats - يعطيك معلومات لأي سيرفر ماين كرافتي :crossed_swords: 
-$serch - للبحث عن اسم شخص معك بالسيرفر :battery: 
-$channels - لرؤية رومات السيرفر :urn: 
-$at - لكتابة ما تكتبة في انجاز ماين كرافتي :hole: 
-$ft - رؤية احصائياتك في فورتنايت :lizard: 
-$color - لأختيار لونك في السيرفر :heart: 
-$invite - معلومة عن الدعوة :soccer: 
-        **
-        `)
-    message.author.send(embed)
-}
-});
-
-
 client.on('message', async message => {
       //!fortnite Ninja solo pc
   let Client = require('fortnite');
@@ -527,38 +473,6 @@ client.on('message', async message => {
     })
     }
 });
-
-client.on('message', message => {
-    if(message.content.startsWith('$help')) {
-   const embed = new Discord.RichEmbed()
-.setColor('RANDOM')
-        .setDescription(`**
-Admin's Commands. :wrench: 
-$ban - أمر الباند :no_entry:
-$kick - أمر الباند  :outbox_tray:
-$cc - صنع ألوان :heart:
-$bc - البرودكاست :mega:
-$clear - مسح الشات :hourglass_flowing_sand: 
-$role - لأعطاء رتبة لـ أحد الأعضاء :key: 
-$rerole - لآزالة الرتبة من أحد الاعضاء 
-$move - لنقل الاعضاء الي رومك  :scales: 
-  **      `)
-    message.author.send(embed)
-}
-});
-
-client.on('message', message => {
-    if(message.content.startsWith('$help')) {
-   const embed = new Discord.RichEmbed()
-.setColor('RANDOM')
-        .setDescription(`**
-Other's :briefcase:
-لدعوة البوت - $inv :pen_fountain:         
-  **      `)
-    message.author.send(embed)
-}
-});
-
 
 const sql = require("sqlite");
 client.on("message", async message => {
