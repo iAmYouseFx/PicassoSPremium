@@ -78,7 +78,7 @@ hero.on('message', async message => {
 
     var what;
     var pay;
-    var channel = hero.channels.get('471567203079028736');
+    var channel = hero.channels.get('471988669608361984');
     message.channel.send('**اولا اكتب على اي رتبة تريد التقديم .. `ادارة , Helper , Seller`**').then(m => {
       message.channel.awaitMessages(filter, {
         max: 1,
@@ -158,9 +158,8 @@ hero.on('message', async message => {
 
 hero.on('message',async message => {
 let mention = message.mentions.members.first();
-let acRoom = hero.channels.get('471567203079028736');
+let acRoom = hero.channels.get('471987435220369408');
 if(message.content.startsWith(prefix + "رفض")) {
-if(message.guild.id !== '468068936848637972') return;
 if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
 if(!mention) return message.reply("منشن شخص");
 
@@ -177,9 +176,8 @@ hero.on('message',async message => {
   let mention = message.mentions.members.first();
   let role = message.content.split(" ").slice(2).join(" ");
   let mySupport = message.guild.roles.find('name',role);
-  let acRoom = hero.channels.get('471567203079028736');
+  let acRoom = hero.channels.get('471987435220369408');
   if(message.content.startsWith(prefix + "قبول")) {
-    if(message.guild.id !== '468068936848637972') return;
     if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
     if(!mention) return message.reply('منشن شخص');
     if(!role) return message.reply('ادخل اسم رتبة');
