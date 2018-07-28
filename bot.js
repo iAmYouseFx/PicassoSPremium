@@ -160,6 +160,7 @@ hero.on('message',async message => {
 let mention = message.mentions.members.first();
 let acRoom = hero.channels.get('471987435220369408');
 if(message.content.startsWith(prefix + "رفض")) {
+if(message.guild.id !== '444399719104380928') return;
 if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
 if(!mention) return message.reply("منشن شخص");
 
@@ -178,6 +179,7 @@ hero.on('message',async message => {
   let mySupport = message.guild.roles.find('name',role);
   let acRoom = hero.channels.get('471987435220369408');
   if(message.content.startsWith(prefix + "قبول")) {
+    if(message.guild.id !== '444399719104380928') return;
     if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
     if(!mention) return message.reply('منشن شخص');
     if(!role) return message.reply('ادخل اسم رتبة');
